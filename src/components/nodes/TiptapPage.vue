@@ -1,5 +1,5 @@
 <template>
-  <node-view-wrapper class="tiptap-page text-editor relative" :id="node.attrs.id">
+  <node-view-wrapper class="tiptap-page relative" :id="node.attrs.id">
     <node-view-content class="tiptap-page__content" />
   </node-view-wrapper>
 </template>
@@ -9,13 +9,16 @@ import { NodeViewContent, nodeViewProps, NodeViewWrapper } from '@tiptap/vue-3'
 </script>
 
 <style>
-.page-content {
-  background: #f5f5f5;
-  border-radius: 4px;
-  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
-  color: #333;
-  font-size: 16px;
-  line-height: 1.5;
-  padding: 20px;
+.tiptap-page {
+  width: 210mm;
+  height: 297mm;
+  background: white;
+  margin: 0 auto;
+  padding: 20mm;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  font-family: Arial, sans-serif;
 }
 </style>
